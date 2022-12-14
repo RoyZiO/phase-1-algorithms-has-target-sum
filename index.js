@@ -1,11 +1,28 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
-}
+
+    const passedDigits = {};
+
+
 
 /* 
   Write the Big O time complexity of your function here
 */
+for (const number of array) {
+  
+  //consider number of steps (n)
+  const quota = target - number;
 
+  if (quota in passedDigits) 
+  
+  return true;
+
+    passedDigits[number] = true;
+  }
+
+  return false;
+
+}
 /* 
   Add your pseudocode here
 */
